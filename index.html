@@ -4,52 +4,60 @@
 <meta charset="utf-8">
 <title>Fab Lab Daejeon</title>
 <style>
-body{
-  margin:0;
-}
-a {
-  color:black;
-  text-decoration: none;
-}
-h1 {
-  font-size:45px;
-  text-align: left;
-  border-bottom:2px solid black;
-  margin:0;
-  padding:10px;
-}
-ol{
-  border-right:1px solid gray;
-  width:200px;
-  margin:0;
-  padding:20px;
-}
-#grid{
-  display: grid;
-  grid-template-columns: 290px 1fr;
-}
-#grid ol{
-  padding-left:33px;
-}
-#grid #article{
-  padding-left:25px;
-}
-  </style>
+  body{
+    margin:0;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size:45px;
+    text-align: left;
+    border-bottom:2px solid black;
+    margin:0;
+    padding:10px;
+    padding-left: 15px;
+    padding-bottom: 13px;
+  }
+  ol{
+    border-right:1px solid black;
+    width:140px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+  }
+  #grid ol{
+    padding-left:33px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+      padding: 10px;
+    }
+    ol{
+      border-right:none;
+    }
+  }
+</style>
 </head>
 <body>
     <h1><a href="index.html">Fab Lab Daejeon</a></h1>
   <div id="grid">
       <ol>
-        <li><a href="1.html" class="saw" id="active">About</a></li>
-        <li><a href="2.html" class="saw">Events / Calendar</a></li>
-        <li><a href="3.html" class="saw">Fab Lab Daejeon's Making</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100014706637340" target="_blank" title="facebook">Facebook Link (click here)</a></li>
+        <li><a href="1.html">About</a></li>
+        <li><a href="2.html">Events / Workshop</a></li>
+        <li><a href="3.html">Fab Equipment</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100014706637340" target="_blank" title="facebook">Facebook Link</a></li>
       </ol>
     <div>
         <p>
-          안녕하세요! 팹랩대전의 홈페이지입니다. 만나서 반갑습니다 :)
+          안녕하세요! 만들기의 즐거움을 추구하는 팹랩대전의 홈페이지입니다.
         </p>
-        <img src="fablab.jpg" width="90%"/>
+        <img src="fablab.jpg" width="95%"/>
     </div>
   </div>
 </body>
